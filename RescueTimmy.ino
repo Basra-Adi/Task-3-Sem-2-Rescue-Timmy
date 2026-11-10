@@ -42,14 +42,6 @@ float Ki_scale = 0.025;
 float d;
 float Kd_scale = 0.25;
 
-//MPU6050
-const int MPU = 0x68;
-float GyroZ, accGyroZ, GyroErrorZ;
-float elapsedTime_G, currentTime_G, previousTime_G;
-unsigned long previousTime_Q;
-float yaw, yaw_test;
-int c = 0;
-
 //Left Motor
 const int In1 = 7;
 const int In2 = 8;
