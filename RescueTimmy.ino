@@ -112,8 +112,6 @@ void setup() {
 
 void loop() {
   if(sd_card == false){
-    analogArray();
-    motor();
     distance_timmy();
 
     if (distance < 30){
@@ -138,6 +136,8 @@ void loop() {
       }
     }
     if (timmy == false){
+      analogArray();
+      motor();
       PID();
     }   
   }
